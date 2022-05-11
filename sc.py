@@ -3,7 +3,7 @@ import shodan
 import argparse
 from censys.search import CensysHosts
 
-parser = argparse.ArgumentParser(description="Shodan scanner")
+parser = argparse.ArgumentParser(description="Shodan&Censys parser")
 parser.add_argument('--verbose', '-v', help='Verbose output', action="store_true")
 parser.add_argument('--search', '-s', type=str, help='Search query', required=True)
 parser.add_argument('--engine', '-e', choices=['shodan', 'censys'], help='Engine (shodan or censys)', required=True)
